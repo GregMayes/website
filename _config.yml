@@ -1,0 +1,20 @@
+url: "https://gregmayes.dev" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "gregmayes.dev" # the name of your site, e.g. ACME Corp.
+
+plugins:
+  - jekyll-postcss
+
+postcss:
+  cache: false
+
+exclude:
+  - .jekyll-cache/
+  - package.json
+  - package-lock.json
+  - node_modules/
+  - postcss.config.js
+  - tailwind.config.js
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock

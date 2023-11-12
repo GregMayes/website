@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<h1 class="text-2xl font-medium">Posts</h1>
+
+<ul class="mt-2 list-disc list-inside">
+  {% for post in site.posts %}
+    <li>
+      <a
+          href="{{ post.url }}"    
+          class="text-blue-600 hover:text-blue-800"
+      >
+          {{ post.title }}
+      </a> <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+    </li>
+  {% endfor %}
+</ul>
