@@ -1,0 +1,4 @@
+node_modules
+gems
+.jekyll-cache
+_site
