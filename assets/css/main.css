@@ -12,3 +12,10 @@
         }
     }
 }
+
+@layer utilities {
+    .min-h-dynamic-screen {
+        height: 100vh; /* fallback for Opera, IE and etc. */
+        height: 100dvh;
+    }
+}
