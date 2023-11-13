@@ -12,18 +12,74 @@
     </title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   </head>
-  <body>
-    <nav class="bg-gradient-to-r from-purple-500 via-blue-500 to-green-600 px-5 py-4 sticky top-0 z-40">
-      <a
-        href="/"
-        class="text-lg tracking-widest text-white hover:text-gray-300"
-      >
-        gregmayes.dev
-      </a>
+  <body class="flex flex-col min-h-screen">
+    <nav class="flex-none bg-gradient-to-r from-purple-500 via-blue-500 to-green-600 px-5 py-4 sticky top-0 z-40">
+      <div class="flex items-center justify-between">
+        <a
+          href="/"
+          class="text-lg tracking-widest text-white hover:text-gray-300"
+        >
+          gregmayes.dev
+        </a>
+
+        <div class="flex items-center">
+          <a href="mailto:hello@gregmayes.dev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 hover:opacity-70"
+              alt="Email icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="https://x.com/GregMayesDev"
+            target="_blank"
+            class="ml-3 hover:opacity-60"
+          >
+            <img
+              class="h-6 w-6"
+              alt="x.com logo"
+              src="/assets/images/x-logo-black.png"
+            />
+          </a>
+
+          <a
+            href="https://github.com/GregMayes"
+            target="_blank"
+            class="ml-3 hover:opacity-60"
+          >
+            <img
+              class="h-6 w-6"
+              alt="GitHub logo"
+              src="/assets/images/github-mark.svg"
+            />
+          </a>
+        </div>
+      </div>
     </nav>
 
-    <main class="px-5 mt-5">
+    <main class="grow px-5 mt-5">
       {{ content }}
     </main>
+
+    <footer class="flex-none p-5 text-center">
+      Created using <a
+        href="https://jekyllrb.com"
+        class="text-blue-600 hover:text-blue-800"
+      >Jekyll</a> and hosted on <a
+        href="https://pages.github.com/"
+        class="text-blue-600 hover:text-blue-800"
+      >GitHub Pages.</a>
+    </footer>
   </body>
 </html>

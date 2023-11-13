@@ -1,18 +1,35 @@
 ---
 layout: default
 ---
+<p>
+  I'm Greg Mayes and this is my personal website. I'm a lead software engineer currently residing in Stoke-on-Trent, UK.
+</p>
 
-<h1 class="text-2xl font-medium">Posts</h1>
+<p class="mt-3">
+  I mainly work with PHP (Laravel) and JavaScript (Vue) but I've dabbled with plenty of other languages, frameworks, and domains.
+</p>
+
+<hr class="h-px my-5 bg-gray-400 border-0" />
+
+<h1 class="text-2xl font-medium">
+  Posts
+</h1>
 
 <ul class="mt-2 list-disc list-inside">
-  {% for post in site.posts %}
-    <li>
-      <a
-          href="{{ post.url }}"    
-          class="text-blue-600 hover:text-blue-800"
-      >
-          {{ post.title }}
-      </a> <small>{{ post.date | date: "%Y-%m-%d" }}</small>
-    </li>
-  {% endfor %}
+  {% if site.posts.size == 0 %}
+    <p>
+      <i>Check back soon</i>
+    </p>
+  {% else %}
+    {% for post in site.posts %}
+      <li>
+        <a
+            href="{{ post.url }}"
+            class="text-blue-600 hover:text-blue-800"
+        >
+            {{ post.title }}
+        </a> <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+      </li>
+    {% endfor %}
+  {% endif %}
 </ul>
