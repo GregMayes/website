@@ -14,8 +14,8 @@
 }
 
 @layer utilities {
-    .min-h-dynamic-screen {
+    .min-h-screen-svh {
         height: 100vh; /* fallback for Opera, IE and etc. */
-        height: 100dvh;
+        height: 100svh;
     }
 }
