@@ -2,18 +2,22 @@
 layout: default
 ---
 
-<article>
-  <header>
-    <h1 class="text-2xl font-medium">
-      {{ page.title }}
-    </h1>
+<main class="grow px-5 mt-5">
+  <article>
+    <header>
+      <h1 class="text-2xl font-semibold">
+        {{ page.title }}
+      </h1>
 
-    <p class="text-sm">
-      Published on: {{ page.date | date: "%Y-%m-%d" }}
-    </p>
-  </header>
+      <p class="text-sm">
+        Published on {{ page.date | date: "%Y-%m-%d" }}
+      </p>
+    </header>
 
-  <div class="markdown mt-4">
-    {{ content }}
-  </div>
-</article>
+    <hr class="h-px mt-5 bg-gray-400 border-0" />
+
+    <div class="markdown mt-5">
+      {{ content }}
+    </div>
+  </article>
+</main>
