@@ -5,10 +5,39 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer {
+    html {
+        overflow: hidden;
+    }
+}
+
 @layer components {
     .markdown {
-        > p + p {
+        & p {
+            & code {
+                @apply bg-gray-200;
+                @apply m-0;
+                @apply whitespace-break-spaces;
+                padding: .2rem .4rem;
+                font-size: 85%;
+                border-radius: 6px;
+            }
+
+            & a {
+                @apply text-blue-600;
+                @apply hover:text-blue-800;
+            }
+        }
+
+        & p + p {
             @apply mt-4;
+        }
+
+        & figure {
+            @apply px-6;
+            @apply py-4;
+            @apply my-4;
+            @apply overflow-x-scroll;
         }
     }
 }
