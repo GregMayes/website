@@ -16,13 +16,15 @@
       {% endif %}
     </title>
 
+    {% assign cacheBuster = site.time | date:'?v=%s' %}
+
     <link
       rel="stylesheet"
-      href="{{ "/assets/css/main.css" | relative_url }}"
+      href="{{ "/assets/css/main.css" | relative_url | append: cacheBuster }}"
     >
     <link
       rel="stylesheet"
-      href="{{ "/assets/css/syntax.css" | relative_url }}"
+      href="{{ "/assets/css/syntax.css" | relative_url | append: cacheBuster }}"
     >
   </head>
 
