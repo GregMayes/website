@@ -20,9 +20,13 @@
       rel="stylesheet"
       href="{{ "/assets/css/main.css" | relative_url }}"
     >
+    <link
+      rel="stylesheet"
+      href="{{ "/assets/css/syntax.css" | relative_url }}"
+    >
   </head>
 
-  <body class="flex flex-col min-h-screen-svh">
+  <body class="flex flex-col min-h-screen-svh overflow-y-auto">
     {% include header.html %}
 
     {{ content }}

@@ -1,6 +1,17 @@
 url: "https://gregmayes.dev" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "gregmayes.dev" # the name of your site, e.g. ACME Corp.
+permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: post
+      category: posts
+      author: Greg Mayes
 
 plugins:
   - jekyll-postcss
