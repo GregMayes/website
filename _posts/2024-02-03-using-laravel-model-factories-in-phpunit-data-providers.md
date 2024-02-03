@@ -84,3 +84,5 @@ class UserTest extends TestCase
 {% endhighlight %}
 
 The above approach does have the downside of requiring you to invoke the `Closure` inside the body of your test, but it's a relatively small price to pay. For the sake of completeness, I've included examples of returning a singular `User` model in a data set as well as returning an array of `User` models. 
+
+If you want to learn more about PHPUnit data providers outside of the previously linked documentation, then I would highly recommend [this blog post](https://barlow.dev/posts/phpunits-data-providers-are-your-friend) by Matt Barlow.
