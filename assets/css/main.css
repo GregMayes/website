@@ -44,7 +44,7 @@
 
 @layer utilities {
     .min-h-screen-svh {
-        height: 100vh; /* fallback for Opera, IE and etc. */
+        height: 100vh; /* fallback for Opera, IE, etc. */
         height: 100svh;
     }
 }
