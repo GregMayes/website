@@ -1,5 +1,6 @@
 ---
 title: Using Laravel Model Factories in PHPUnit Data Providers
+description: Using Laravel model factories inside PHPUnit data providers isn't as straightforward as you would think. This article shows you how can pull this off.
 tags: PHP, PHPUnit, Laravel
 ---
 
