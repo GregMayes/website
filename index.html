@@ -24,22 +24,16 @@ description: Greg Mayes' personal website and software development blog
   </h2>
 
   <ul class="list-disc list-inside mt-2">
-    {% if site.posts.size == 0 %}
-      <p>
-        <i>Check back soon</i>
-      </p>
-    {% else %}
-      {% for post in site.posts %}
-        <li class="mb-2">
-          <a
-            href="{{ post.url }}"
-            class="text-blue-600 hover:text-blue-800"
-          >
-            {{ post.title }}
-          </a> <small>{{ post.date | date: "%Y-%m-%d" }}</small>
-        </li>
-      {% endfor %}
-    {% endif %}
+    {% for post in site.posts %}
+      <li class="mb-2">
+        <a
+          href="{{ post.url }}"
+          class="text-blue-600 hover:text-blue-800"
+        >
+          {{ post.title }}
+        </a> <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+      </li>
+    {% endfor %}
   </ul>
 </main>
 
