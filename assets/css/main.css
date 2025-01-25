@@ -5,7 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer {
+@layer base {
     html {
         overflow: hidden;
     }
@@ -38,6 +38,130 @@
             @apply py-4;
             @apply my-4;
             @apply overflow-x-scroll;
+        }
+    }
+
+    .highlight {
+        --color-text-default: #d0d0d0;
+        --color-background-default: #151515;
+        --color-error: #ac4142;
+        --color-comment: #505050;
+        --color-keyword: #aa759f;
+        --color-class: #d28445;
+        --color-string: #90a959;
+        --color-number: #90a959;
+        --color-attribute: #6a9fb5;
+        --color-function: #f4bf75;
+        --color-special: #8f5536;
+        --color-regex: #75b5aa;
+
+        @apply bg-[var(--color-background-default)] text-[var(--color-text-default)];
+
+        table {
+            td {
+                padding-block: 5px;
+                padding-inline: 5px;
+            }
+
+            pre {
+                @apply m-0;
+            }
+        }
+
+        .err {
+            @apply text-[var(--color-background-default)] bg-[var(--color-error)];
+        }
+
+        .c,
+        .ch,
+        .cd,
+        .cm,
+        .cpf,
+        .c1,
+        .cs {
+            @apply text-[var(--color-comment)];
+        }
+
+        .cp,
+        .nt {
+            @apply text-[var(--color-function)];
+        }
+
+        .o,
+        .ow,
+        .p,
+        .pi {
+            @apply text-[var(--color-text-default)];
+        }
+
+        .gi {
+            @apply text-[var(--color-string)];
+        }
+
+        .gd {
+            @apply text-[var(--color-error)];
+        }
+
+        .gh {
+            @apply text-[var(--color-attribute)] font-bold;
+        }
+
+        .k,
+        .kn,
+        .kp,
+        .kr,
+        .kv {
+            @apply text-[var(--color-keyword)];
+        }
+
+        .kc,
+        .kt,
+        .kd {
+            @apply text-[var(--color-class)];
+        }
+
+        .s,
+        .sb,
+        .sc,
+        .dl,
+        .sd,
+        .s2,
+        .sh,
+        .sx,
+        .s1,
+        .ss,
+        .m,
+        .mb,
+        .mf,
+        .mh,
+        .mi,
+        .il,
+        .mo,
+        .mx {
+            @apply text-[var(--color-string)];
+        }
+
+        .sa {
+            @apply text-[var(--color-keyword)];
+        }
+
+        .sr {
+            @apply text-[var(--color-regex)];
+        }
+
+        .si,
+        .se {
+            @apply text-[var(--color-special)];
+        }
+
+        .nn,
+        .nc,
+        .no {
+            @apply text-[var(--color-function)];
+        }
+
+        .na {
+            @apply text-[var(--color-attribute)];
         }
     }
 }
