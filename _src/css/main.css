@@ -35,7 +35,7 @@
   }
 }
 
-@utility highlight {
+.highlight {
   --color-text-default: #d0d0d0;
   --color-background-default: #151515;
   --color-error: #ac4142;
