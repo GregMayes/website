@@ -9,6 +9,5 @@ gem "ostruct", "~> 0.6.0"
 gem "base64", "~> 0.2.0"
 
 group :jekyll_plugins do
-    gem "jekyll-postcss", "~> 0.5.0"
     gem "jekyll-seo-tag", "~> 2.8"
 end

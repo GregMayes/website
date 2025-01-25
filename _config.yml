@@ -15,18 +15,14 @@ defaults:
       author: Greg Mayes
 
 plugins:
-  - jekyll-postcss
   - jekyll-seo-tag
 
-postcss:
-  cache: false
-
 exclude:
+  - _src/
   - .jekyll-cache/
   - package.json
   - package-lock.json
   - node_modules/
-  - postcss.config.js
   - tailwind.config.js
   - gemfiles/
   - Gemfile
