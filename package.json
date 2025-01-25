@@ -5,11 +5,12 @@
   "author": "Greg Mayes",
   "license": "ISC",
   "dependencies": {
-    "tailwindcss": "^3.3.3"
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
   },
   "scripts": {
     "jekyll:dev": "bundle exec jekyll serve",
-    "tailwind:dev": "npx tailwindcss -i ./_src/css/main.css -o ./assets/css/main.css --watch",
-    "tailwind:prod": "npx tailwindcss -i ./_src/css/main.css -o ./assets/css/main.css --minify"
+    "tailwind:dev": "npx @tailwindcss/cli -i ./_src/css/main.css -o ./assets/css/main.css --watch",
+    "tailwind:prod": "npx @tailwindcss/cli -i ./_src/css/main.css -o ./assets/css/main.css --minify"
   }
 }
