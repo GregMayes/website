@@ -10,4 +10,5 @@ gem "base64", "~> 0.2.0"
 
 group :jekyll_plugins do
     gem "jekyll-seo-tag", "~> 2.8"
+    gem "jekyll-feed", "~> 0.17.0"
 end

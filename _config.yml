@@ -16,6 +16,7 @@ defaults:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
 
 exclude:
   - _src/
