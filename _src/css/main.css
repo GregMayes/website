@@ -4,6 +4,16 @@
   html {
     overflow: hidden;
   }
+
+  h1 {
+    @apply text-3xl;
+    @apply font-semibold;
+  }
+
+  h2 {
+    @apply text-2xl;
+    @apply font-semibold;
+  }
 }
 
 @utility markdown {
@@ -27,11 +37,19 @@
     @apply mt-4;
   }
 
+  & p + h2 {
+    @apply mt-4;
+  }
+
   & figure {
     @apply px-6;
     @apply py-4;
     @apply my-4;
     @apply overflow-x-scroll;
+  }
+
+  & h2:has(+ p) {
+    @apply mb-2;
   }
 }
 
