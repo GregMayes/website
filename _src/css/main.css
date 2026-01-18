@@ -1,5 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import 'tailwindcss';
+
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url('/assets/fonts/PressStart2P-Regular.woff2') format('woff2');
+}
+
+@theme {
+  --font-press-start: "Press Start 2P", sans-serif;
+}
 
 @layer base {
   html {
@@ -15,10 +26,6 @@
     @apply text-2xl;
     @apply font-semibold;
   }
-}
-
-@theme {  
-  --font-press-start: "Press Start 2P", sans-serif;
 }
 
 @utility markdown {
