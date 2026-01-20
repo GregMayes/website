@@ -19,6 +19,14 @@
     {% assign cacheBuster = site.time | date:'?v=%s' %}
 
     <link
+      rel="preload"
+      href="/assets/fonts/PressStart2P-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
+
+    <link
       rel="stylesheet"
       href="{{ "/assets/css/main.css" | relative_url | append: cacheBuster }}"
     >
