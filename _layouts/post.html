@@ -12,6 +12,16 @@ layout: default
       <p class="text-sm">
         Published on {{ page.date | date: "%Y-%m-%d" }}
       </p>
+
+      {% if page.tags %}
+        <ul class="list-none mt-2 flex flex-wrap gap-2" aria-label="Tags">
+          {% for tag in page.tags %}
+            <li class="text-xs bg-blue-200 rounded px-2 py-1">
+              {{ tag }}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </header>
 
     <div class="markdown my-4 md:my-6">

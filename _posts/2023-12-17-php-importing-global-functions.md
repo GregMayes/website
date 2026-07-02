@@ -1,7 +1,7 @@
 ---
 title: Importing Global Functions in Namespaced PHP Code
 description: Importing global functions in namespaced PHP code can improve performance by a surprising amount. This article explores how and why it works.
-tags: PHP
+tags: [PHP, Performance]
 ---
 
 You may have seen namespaced PHP code where global functions have been imported via `use function` or have been fully-qualified using a `\` character. Or perhaps you use a static analysis tool that routinely bugs you to import global functions and you don't really understand why. In this short article, I'm going to explain the "why" behind this particular micro-optimisation.

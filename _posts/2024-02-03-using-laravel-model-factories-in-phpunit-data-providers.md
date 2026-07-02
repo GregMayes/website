@@ -1,7 +1,7 @@
 ---
 title: Using Laravel Model Factories in PHPUnit Data Providers
 description: Using Laravel model factories inside PHPUnit data providers isn't as straightforward as you would think. This article shows you how can pull this off.
-tags: PHP, PHPUnit, Laravel
+tags: [PHP, PHPUnit, Laravel]
 ---
 
 If you've ever tried to use a [Laravel model factory](https://laravel.com/docs/10.x/eloquent-factories) inside a [PHPUnit data provider](https://docs.phpunit.de/en/11.0/writing-tests-for-phpunit.html#data-providers), then you were likely greeted with an error message resembling `"A facade root has not been set"`. After scratching your head for a few minutes, you probably (wisely) decided that life is too short and then promptly scrapped the whole approach. The issue that you encountered is an expected consequence of the lifecycle of PHPUnit tests. In PHPUnit, data providers are called before a test's `setUp` method. If you look inside the `Illuminate\Foundation\Testing\TestCase` class, which is the abstract class that Laravel feature tests ultimately extend, you'll see the following snippet:

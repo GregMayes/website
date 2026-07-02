@@ -1,7 +1,7 @@
 ---
 title: Migrating a Jekyll Blog from jekyll-postcss to the Tailwind CLI
 description: When attempting to upgrade this blog to Tailwind v4, I bumped into a couple of issues with PostCSS. This article chronicles how I removed PostCSS and migrated over to the Tailwind CLI
-tags: Jekyll, CSS, Tailwind, PostCSS
+tags: [Jekyll, CSS, Tailwind, PostCSS]
 ---
 
 ## Background
