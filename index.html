@@ -3,27 +3,27 @@ layout: default
 description: Greg Mayes' personal website and software development blog
 ---
 
-<main class="2xl:mx-auto 2xl:w-3/4 grow px-5 mt-6 2xl:mt-8">
+<main class="2xl:mx-auto 2xl:w-3/4 grow px-4 md:px-5 mt-4 md:mt-6 2xl:mt-8">
   <h1>Introduction</h1>
 
-  <p class="mt-3">
+  <p class="mt-2">
     I'm Greg Mayes and this is my personal website. I'm a British software developer with 10 years of experience in web development. My speciality is optimising applications for performance and maintainability.
     PHP and JavaScript make up the vast majority of my commercial experience, and I like to dabble with C/C++, Go, and Ruby outside of work. I have strong Unix knowledge and have delivered numerous infrastructure projects.
   </p>
 
-  <p class="mt-3">
+  <p class="mt-4">
     I reside in Stafford with my wonderful wife. I've spoken at a few local tech meetups and I'd love to speak at a large conference one day. Please reach out if you have any speaking opportunities in Europe that you think I'd be a good fit for.
   </p>
 
-  <p class="mt-3">
+  <p class="mt-4">
     I'm vehemently against the idea of using LLMs for writing. All text on this website was carefully written by a human. Whether that's a good thing or not in this case remains to be seen.
   </p>
 
-  <h2 class="mt-6">
+  <h2 class="mt-4 md:mt-6">
     Posts
   </h2>
 
-  <ul class="list-disc list-inside mt-3">
+  <ul class="list-disc list-inside mt-2">
     {% for post in site.posts %}
       <li class="mb-2">
         <a
@@ -37,4 +37,3 @@ description: Greg Mayes' personal website and software development blog
   </ul>
 </main>
 
-{% include footer.html %}
