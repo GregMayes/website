@@ -52,7 +52,7 @@
   }
 
   & p + h2 {
-    @apply mt-4;
+    @apply mt-6;
   }
 
   & figure {
@@ -60,6 +60,10 @@
     @apply py-4;
     @apply my-4;
     @apply overflow-x-scroll;
+  }
+
+  & figure + h2 {
+    @apply mt-6;
   }
 
   & h2:has(+ p) {
